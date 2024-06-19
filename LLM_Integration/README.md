@@ -117,6 +117,10 @@ ollama run llama3
 
 If you encounter an error related to the SSH key, such as input/output error, ensure that the SSH key is properly set up and the permissions are correct. If the issue persists, you may need to delete the existing container and recreate it using the Docker commands provided.
 
+Screenshot of the error:
+
+<img src="issue_key_error.png" />
+
 #### Troubleshooting:
 
 If you face any issues, try the following steps:
@@ -153,5 +157,9 @@ docker logs ollama
 ```
 
 By following these steps, you should be able to set up and run the Llama3 model locally on your macOS laptop. If you encounter any issues, please refer to the troubleshooting section or seek help from the Ollama community.
+
+And, here is the complete image of the installation process.
+
+<img src="installation_guide.png" />
 
 This `README.md` provides clear instructions on setting up the project, generating SSH keys, configuring Docker, and troubleshooting common issues.
