@@ -1,2 +1,2 @@
 # PromptEngineeringInAI
-This is a repository created to store information related to course of Prompt Engineering.
+This is a project created to store information related to Prompt Engineering. We are using 
