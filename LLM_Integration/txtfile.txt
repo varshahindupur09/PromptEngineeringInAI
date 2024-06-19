@@ -1,0 +1,88 @@
+# PromptEngineeringInAI
+This is a project created to store information related to Prompt Engineering. We are using Ollama - llama3 model to run locally in a MAC OS laptop. 
+
+Below are the steps used to inform how this model was integrated locally and utlized saving the costs for using a paid version of LLM.
+
+## Contents:
+1. Downloading OLLAMA file using homebrew
+2. Prepare a Git Repository and clone it locally
+3. Make a folder LLM_Integration to keep the local model separate from other deployments/projects
+4. Make python environment to work if you're planning to add more to this project
+5. Download Docker and pull the docker image for ollama from
+
+1. Refer this site on learning to use homebrew for downloading Ollama 
+https://formulae.brew.sh/formula/ollama
+
+and now use the VS Code terminal to start downloading Ollama model
+
+a. brew install ollama
+
+check the installation:
+(venv_llm) varshahindupur@Varshas-MacBook-Air PromptEngineeringInAI % ollama -v
+ollama version is 0.1.44
+
+5. Docker:
+docker pull ollama/ollama
+docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+
+(venv_llm) varshahindupur@Varshas-MacBook-Air PromptEngineeringInAI % docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+
+7b050ab29616a234d0d7a65a9cfe99dec7ec39232637aebf579a563fbd8cbd5c
+
+or you can run the image from docker software
+
+6. You need to now switch back to a terminal and there type:
+
+venv_llm) varshahindupur@Varshas-MacBook-Air PromptEngineeringInAI % ollama run llama3                 
+
+pulling manifest 
+Error: pull model manifest: open /root/.ollama/id_ed25519: input/output error
+(venv_llm) varshahindupur@Varshas-MacBook-Air PromptEngineeringInAI % 
+
+But once you do you can see an error to resolve it follow the steps below to create SSH deadline:
+
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -C "hindupur.v@northeastern.edu"
+
+then the key would be generated like this:
+
+(venv_llm) varshahindupur@Varshas-MacBook-Air PromptEngineeringInAI % ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -C "hindupur.v@northeastern.edu"
+
+Generating public/private ed25519 key pair.
+/Users/varshahindupur/.ssh/id_ed25519 already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/varshahindupur/.ssh/id_ed25519
+Your public key has been saved in /Users/varshahindupur/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:eQBt1X08VPVqhQoMe/fYcBI2y+bxVUtYF0ZP/tIjIQI hindupur.v@northeastern.edu
+The key's randomart image is:
++--[ED25519 256]--+
+|      .E....+.=OX|
+|       .++ o.=+=O|
+|       .o.+.O.ooB|
+|         +.=.@.=.|
+|        S . +.B.o|
+|         .   ....|
+|                 |
+|                 |
+|                 |
++----[SHA256]-----+
+
+(venv_llm) varshahindupur@Varshas-MacBook-Air PromptEngineeringInAI % 
+
+next steps: 
+
+mkdir -p ~/.ollama
+
+cp ~/.ssh/id_ed25519 ~/.ollama/
+
+export OLLAMA_HOME=~/.ollama
+
+echo 'export OLLAMA_HOME=~/.ollama' >> ~/.zshrc
+
+ls -l ~/.ollama/id_ed25519
+
+chmod 777 ~/.ollama/id_ed25519
+
+If this issue persists, delete the existing container and pull docker image into and run again, it would work with the above commands when used.
