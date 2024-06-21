@@ -193,7 +193,7 @@ docker ps
 docker rm <container_id> --force
 ```
 
-## Comparision between MoonDream and LLama3 models.
+## Comparision between Gemma and LLama3 models.
 
 LLAMA3:
 ```
