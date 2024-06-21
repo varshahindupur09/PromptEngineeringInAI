@@ -3,6 +3,9 @@
 This project is created to store information related to Prompt Engineering. 
 We are using the Ollama - Llama3 model to run locally on a macOS laptop.
 
+## What is Ollama? 
+Ollama is an open-source project that serves as a powerful and user-friendly platform for running LLMs on your local machine. It acts as a bridge between the complexities of LLM technology and the desire for an accessible and customizable AI experience.
+
 Below are the steps to inform how this model was integrated locally and utilized, saving the costs associated with using a paid version of LLM.
 
 ## Contents
@@ -12,7 +15,20 @@ Below are the steps to inform how this model was integrated locally and utilized
 4. Set up a Python environment if you plan to add more to this project
 5. Download Docker and pull the Docker image for Ollama
 
-## Steps to Set Up
+## Why Choose Ollama:
+Ollama has provided the access for multiple LLMs within one single application. Below are the reasons why I chose these two models.
+
+Llama 3 (8B)
+Use Cases: Advanced conversational AI, customer support, virtual assistants, and complex query handling.
+Details: With its larger parameter size, Llama 3 is well-suited for handling nuanced conversations and providing detailed, context-aware responses.
+
+For my MAC laptop, this model takes a longer time to give response to one single question. Therefore I wanted to try Moondream which is great for conversations and is a really simple chatbot.
+
+Moondream 2 (1.4B)
+Use Cases: Basic conversational agents, personalized recommendations, simple chatbots.
+Details: Ideal for low-resource environments and applications that require basic interaction capabilities.
+
+## Steps to Set Up and use llama 3 model:
 
 ### 1. Download OLLAMA using Homebrew
 
@@ -93,19 +109,15 @@ Set the OLLAMA_HOME environment variable:
 ```
 export OLLAMA_HOME=~/.ollama
 ```
-
+docker rm -f ollama
 ```
 echo 'export OLLAMA_HOME=~/.ollama' >> ~/.zshrc
-```
-
-```
-source ~/.zshrc
 ```
 
 Ensure correct permissions for the SSH key:
 
 ```
-chmod  ~/.ollama/id_ed25519
+chmod 777 ~/.ollama/id_ed25519
 ```
 
 ### 6. Run Ollama with Llama3 Model
@@ -146,6 +158,11 @@ Recreate Docker Container: If necessary, delete and recreate the Docker containe
 docker rm -f ollama
 ```
 
+Pull the image using the command below:
+```
+docker pull ollama/ollama
+```
+
 ```
 docker run -d -v ~/.ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 ```
@@ -162,4 +179,58 @@ And, here is the complete image of the installation process.
 
 <img src="installation_guide.png" />
 
+### DOCKER COMMANDS for further troubleshooting:
+
+```
+docker images
+```
+
+```
+docker ps
+```
+
+```
+docker rm <container_id> --force
+```
+
+## Comparision between MoonDream and LLama3 models.
+
+LLAMA3:
+```
+(base) (venv_llm) varshahindupur@Varshas-MacBook-Air PromptEngineeringInAI % ollama run llama3                                                                  
+>>> Hello, my name is Varsha. What is your name?
+Nice to meet you, Varsha! I'm just an AI, so I don't have a personal name, but you can call me "Assistant" or "Chatbot" if you'd like. I'm here to help answer questions and have conversations with you. 
+How are you today?
+```
+
+```
+>>> Tell me in short, what is Azure Open AI studio.                                   
+Azure OpenAI Studio is a cloud-based platform that enables developers and businesses to build and deploy AI models using OpenAI's API and tools. It provides a range of features and APIs for building, 
+training, and integrating AI models with other applications.
+```
+
+```
+>>> Can you explain Bernouli's principle in short.                     
+Bernoulli's Principle states that as the velocity of a fluid (liquid or gas) increases, its pressure decreases, and vice versa. This 
+relationship is described by the equation: P + ½ρv² = constant, where P is pressure, ρ is density, v is velocity, and the constant is 
+the same for all points in the flow.
+```
+
+```
+>>> I'm having trouble logging into my account. What should I do?
+Sorry to hear that! If you're having trouble logging into your account, here are some steps you can try:
+
+1. **Check your username and password**: Double-check that your username and password are correct. Make sure caps lock is off and there 
+are no typos.
+2. **Reset your password**: If you've forgotten your password, try resetting it using the "Forgot Password" or "Reset Password" option 
+on the login page.
+3. **Clear browser cache and cookies**: Sometimes, a simple browser refresh can resolve the issue. Try clearing your browser's cache 
+and cookies to start with a clean slate.
+4. **Check for account lockout**: If you've tried multiple login attempts and failed, your account might be locked out temporarily. 
+Check if there are any messages indicating this or contact support to unlock it.
+5. **Try a different browser or device**: If the issue persists, try logging in using a different browser or device to see if the 
+problem is specific to one platform.
+
+If none of these steps help, feel free to provide more details about your login issue, and I'll do my best to assist you!
+```
 This `README.md` provides clear instructions on setting up the project, generating SSH keys, configuring Docker, and troubleshooting common issues.
