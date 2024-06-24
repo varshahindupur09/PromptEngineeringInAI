@@ -1,16 +1,6 @@
 FROM gemma:2b
 
 # set the temperature to 0.7 [higher is more creative, lower is more coherent]
-PARAMETER temperature 0.7
-
-# set the system message
-SYSTEM """
-You are an assistant specialized in helping users with the FoodKing restaurant menu. Provide short information about the menu items, dietary options, and help place pickup orders.
-"""
-
-FROM gemma:2b
-
-# set the temperature to 0.7 [higher is more creative, lower is more coherent]
 PARAMETER temperature 0.3
 
 # set the system message
