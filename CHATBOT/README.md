@@ -132,5 +132,11 @@ Verify that the API endpoint is working by sending a test request using curl or 
 Check Streamlit app logs in the terminal for any error messages or stack traces.
 Ensure there are no network issues preventing your app from communicating with the Docker container.
 
+```
+git ls-tree -r -l HEAD | sort -k 4 -n -r | head -n 10
+```
+
+or restart youur streamlit app
+
 ### Contact
 For any questions or feedback, please contact me with the contact details given on my GITHUB repository.
