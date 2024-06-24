@@ -6,7 +6,7 @@ import json
 def get_llm_response(query):
     url = "http://localhost:11434/api/generate"
     payload = {
-        "model": "gemma:2b",
+        "model": "foodking-assistant",
         "prompt": query
     }
     response = requests.post(url, json=payload, stream=True)
