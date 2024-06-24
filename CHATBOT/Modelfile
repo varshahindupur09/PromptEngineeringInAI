@@ -15,7 +15,7 @@ Remember, SM means small and LG means large. If someone wants to order multiple 
 
 Here is the menu for FoodKing restaurant:
 
-Pizzas:
+Category 1 - Pizzas:
 1. Cheese
    - Pizza Sauce and Pizza Cheese.
    - Prices: $9.49 SM, $14.49 LG, $19.99 Family, $19.99 Sic, $13.99 SM Sic
@@ -92,7 +92,7 @@ Pizzas:
     - Pizza Sauce, Fresh Mozzarella, Basil, and Sliced Tomato.
     - Prices: $11.49 SM, $18.99 LG, $25.49 Family, $25.49 Sic, $17.99 SM Sic
 
-Calzones:
+Category 2 - Calzones:
 1. Cheese
    - Pizza Cheese and Side Marinara.
    - Prices: $9.49 JR, $17.49 SM, $27.49 LG
@@ -161,7 +161,7 @@ Calzones:
     - Pizza Sauce, Pizza Cheese, Sausage, Roasted Pepper, Onion, and Side Marinara.
     - Prices: $13
 
-Appetizers:
+Category 3 - Appetizers:
 1. French Fries
    - Prices: $3.99 SM, $5.49 LG
 
@@ -231,14 +231,14 @@ Appetizers:
 22. Multi Grains & Veggie
     - Prices: $5.49
 
-Wings Express:
+Category 4 - Wings Express:
 1. Boneless
    - Prices: $12.99 SM, $18.90 MD, $26.49 LG, $52.49 Tray
 
 2. Traditional
    - Prices: $9.49 SM, $17.99 MD, $24.49 LG, $47.49 Tray
 
-Super Subs:
+Category 5 - Super Subs:
 1. Italian Cold Cut
    - Sub Roll, Provolone, Mortadella, Hot Ham, and Salami.
    - Price: $28.49
@@ -267,7 +267,7 @@ Super Subs:
    - Sub Roll.
    - Price: $28.49
 
-Hot Subs:
+Category 6 - Hot Subs:
 1. Steak
    - Sub Roll and Shaved Steak.
    - Prices: $7.49 SM, $9.99 MD, $14.99 LG
@@ -344,7 +344,7 @@ Hot Subs:
     - Sub Roll and Steak Tips.
     - Prices: $9.49 SM, $11.49 MD, $16.49 LG
 
-Roast Beefs Subs:
+Category 7 - Roast Beefs Subs:
 1. Super Beef
    - Price: $10.49
 
@@ -362,7 +362,7 @@ Roast Beefs Subs:
    - Fries and Onion Rings
    - Price: $13.99
 
-Cold Subs:
+Category 8 - Cold Subs:
 1. Italian Cold Cut
    - Sub Roll, Provolone, Oil, Oregano, Pepper, Salt, Mortadella, Hot Ham, and Salami.
    - Prices: $7.99 SM, $10.49 MD, $14.99 LG
@@ -431,7 +431,7 @@ Cold Subs:
     - Sub Roll and Dijon Mustard.
     - Prices: $9.49 SM, $10.49 MD, $14.99 LG
 
-Chicken Sandwiches:
+Category 9 - Chicken Sandwiches:
 1. Chicken Cutlet
    - Sub Roll.
    - Prices: $8.49 SM, $10.49 MD, $14.99 LG
@@ -448,7 +448,7 @@ Chicken Sandwiches:
    - Sub Roll.
    - Prices: $9.49 SM, $12.99 MD, $16.99 LG
 
-Egg Subs:
+Category 10 - Egg Subs:
 1. Pepper
    - Sub Roll.
    - Prices: $8.49 SM, $10.49 MD, $14.99 LG
@@ -477,7 +477,7 @@ Egg Subs:
    - Sub Roll and Shaved Steak.
    - Prices: $8.49 SM, $10.49 MD, $14.99 LG
 
-Specialty Subs:
+Category 11 - Specialty Subs:
 1. Andrew's Spicy Italian
    - Sub Roll, Provolone, Salt, Pepper, Oregano, Oil, Mortadella, Hot Ham, Salami, and Pepperoni.
    - Prices: $8.49 SM, $10.49 MD, $15.99 LG
@@ -534,7 +534,7 @@ Specialty Subs:
     - Sub Roll, Feta Cheese, Lettuce, Tomato, Cucumbers, and Black Olives.
     - Prices: $8.49 SM, $10.49 MD, $14.99 LG
 
-Specialty Wraps:
+Category 12 - Specialty Wraps:
 1. Vermont Street
    - Lettuce, Tomato, Red Onions, Cucumbers, Ranch, Bacon, and Turkey.
    - Price: $10.99
@@ -604,7 +604,7 @@ Paninis:
    - Fresh Mozzarella, Eggplant, Portabella Mushrooms, and Roasted Peppers.
    - Price: $13.99
 
-Fresh Burgers:
+Category 13 - Fresh Burgers:
 1. Hamburger
    - Bun, Lettuce, Red Onions, and Tomato.
    - Prices: $8.49 SM, $11.49 LG
@@ -633,7 +633,7 @@ Fresh Burgers:
    - Bun and Cheddar Cheese.
    - Prices: $9.99 SM, $13.99 LG
 
-Salads:
+Category 14 - Salads:
 1. Garden
    - Lettuce, Tomato, Green Peppers, Onion, Cucumbers, and Black Olives.
    - Price: $8.99
@@ -710,7 +710,7 @@ Salads:
     - Parmesan, Caesar, Romaine Lettuce, Croutons, and Buffalo Chicken.
     - Price: $13.99
 
-Salad Wraps:
+Category 15 - Salad Wraps:
 1. Garden
    - Lettuce, Tomato, Green Peppers, Onion, Cucumbers, and Black Olives.
    - Price: $8.99
@@ -771,7 +771,7 @@ Salad Wraps:
     - Feta Cheese, Greek Dressing, Lettuce, Tomato, Green Peppers, Onion, Cucumbers, Black Olives, and Steak Tips.
     - Price: $15.99
 
-Dinner:
+Category 16 - Dinner:
 1. Steak Tip
    - Price: $17.99
 
@@ -803,7 +803,7 @@ Dinner:
 9. Chicken & Steak Combo
    - Price: $20.99
 
-Deno's Red Sauce Dinners & Sauté Pasta Dishes:
+Category 17 - Red Sauce Dinners & Sauté Pasta Dishes:
 1. Pasta Marinara
    - Marinara.
    - Price: $8.49
@@ -840,7 +840,7 @@ Deno's Red Sauce Dinners & Sauté Pasta Dishes:
    - Marinara.
    - Price: $13.99
 
-Drinks:
+Category 18 - Drinks:
 1. Diet Dr. Pepper
    - Price: $2.49
 
@@ -904,7 +904,7 @@ Drinks:
 21. Vitamin Water
     - Price: $2.99
 
-Desserts:
+Category 19 - Desserts:
 1. Cheesecake
    - Price: $4.99
 
@@ -926,7 +926,7 @@ Desserts:
 7. Brownie Cookie
    - Price: $1.99
 
-Seafood:
+Category 20 - Seafood:
 1. Fish & Chips Dinner
    - Tartar Sauce and Haddock & French Fries or Onion Rings
    - Price: $17.99
@@ -975,7 +975,7 @@ Seafood:
 13. Fried Haddock Box
     - Prices: $15.99 SM, $20.99 LG
 
-Bowls & Veggie Menu:
+Category 21 - Bowls & Veggie Menu:
 1. Grilled Chicken Bowl
    - Price: $14.99
 
@@ -994,7 +994,7 @@ Bowls & Veggie Menu:
 6. Grilled Veggie Bowl
    - Price: $13.99
 
-7. Deno's Protein & Veggie Bowl
+7. Protein & Veggie Bowl
    - Price: $16.99
 
 8. Grilled Chicken & Grains Bowl
@@ -1036,7 +1036,7 @@ Bowls & Veggie Menu:
 20. Veggie Meatball & Mixed Veggie
     - Price: $10.49
 
-Kids Menu:
+Category 22 - Kids Menu:
 1. Kids Chicken Fingers
    - French Fries and Ranch.
    - Price: $7.99
@@ -1084,7 +1084,7 @@ Kids Menu:
 13. Kids Fish & Chips
     - Price: $10.99
 
-Sandwiches:
+Category 23 - Sandwiches:
 1. Hamburger Sandwich
    - White Toast.
    - Price: $7.99
@@ -1113,7 +1113,7 @@ Sandwiches:
    - White Toast.
    - Price: $7.99
 
-Pan Pizza:
+Category 24 - Pan Pizza:
 1. Cheese Pizza
    - Pizza Sauce and Pizza Cheese.
    - Prices: $9.49 SM, $14.49 LG
