@@ -149,8 +149,20 @@ or restart youur streamlit app
 ### Step 7: Demonstration
 
 Here you can see the menu is displayed and how the item is being ordered for the very first version.
+
 <img src="chatbot_interaction.png"></img>
 
+The better version and interaction images are shared below:
+
+1. Selecting food item, adding it to the cart and then showing the total amount.
+
+<img src="selection_of_items.png"></img>
+
+2. Gemma response for an question asked by me about the food menu at FoodKing Restaurant.
+
+<img src="gemma_response_1.png"></img>
+
+<img src="gemma_response_2.png"></img>
 
 ### Step 8: Contact
 For any questions or feedback, please contact me with the contact details given on my GITHUB repository.
