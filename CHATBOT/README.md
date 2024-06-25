@@ -91,10 +91,16 @@ source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
 Install the required Python packages:
 
 ```
+pip install -r requirements.txt
+```
+
+OR
+
+```
 pip install streamlit requests beautifulsoup4
 ```
 
-if you want to create a requirements.txt then run
+if you want to create a requirements.txt then run:
 
 ```
 pip freeze > requirements.txt
@@ -140,5 +146,11 @@ git ls-tree -r -l HEAD | sort -k 4 -n -r | head -n 10
 
 or restart youur streamlit app
 
-### Step 7: Contact
+### Step 7: Demonstration
+
+Here you can see the menu is displayed and how the item is being ordered for the very first version.
+<img src="chatbot_interaction.png"></img>
+
+
+### Step 8: Contact
 For any questions or feedback, please contact me with the contact details given on my GITHUB repository.
