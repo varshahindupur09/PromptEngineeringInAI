@@ -1,4 +1,4 @@
-# Restaurant Menu Chatbot
+# Food King Restaurant App & Chatbot
 This project is a Streamlit-based chatbot application that leverages the Ollama Gemma:2B model to provide information about the Food King restaurant menu and help users place pickup orders.
 
 # Problem Statement
