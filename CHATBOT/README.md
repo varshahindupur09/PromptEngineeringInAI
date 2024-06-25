@@ -172,5 +172,7 @@ The better version and interaction images are shared below:
 <img src="gemma_response_2.png"></img>
 <br>
 
+For more information, checkout my youtube video: https://youtu.be/hNW7EwDtSws
+
 ### Step 8: Contact
 For any questions or feedback, please contact me with the contact details given on my GITHUB repository.
