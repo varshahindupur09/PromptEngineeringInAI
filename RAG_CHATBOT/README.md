@@ -34,6 +34,9 @@ This image shows user asking the question - What is film preservation and why do
 
 This image shows user asking the question - Why is the sky blue?
 
+## Gemini Vector Database deployed:
+<img width="1180" alt="image" src="https://github.com/user-attachments/assets/63eebbee-18e3-449f-951d-0f54ef3cfdff">
+
 ## Workflow:
 ### Data Collection and Preprocessing:
 Collect movie data including titles, genres, ratings, and descriptions.
