@@ -63,3 +63,4 @@ Implement input fields and submit buttons for user interaction.
 ## Summary
 This project demonstrates how to build a Movie Making Chatbot system using RAG with LLMs, LangChain, and a vector database. Users can input their queries through a Streamlit interface, and the system retrieves relevant movie embeddings from a vector database to generate recommendations using a language model. The setup integrates various components to provide an efficient and scalable solution for personalized movie recommendations.
 
+## Youtube Video: https://youtu.be/HRHBa0tjPbU
