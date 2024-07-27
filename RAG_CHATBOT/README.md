@@ -70,6 +70,6 @@ This project demonstrates how to build a Movie Making Chatbot system using RAG w
 
 ## Report PDF:
 It is available in my Repository.
-Link: 
+Link: https://github.com/varshahindupur09/PromptEngineeringInAI/blob/main/RAG_CHATBOT/PreviousReportChatbotRAG.pdf
 Link: https://github.com/varshahindupur09/PromptEngineeringInAI/blob/main/RAG_CHATBOT/ReportChatbotRAG.pdf
 
